@@ -1,13 +1,8 @@
 package service;
 
 import enums.EnumPptFrom;
-import enums.EnumPptSuffix;
 import inter.Ppt2PicOperate;
-import org.apache.commons.lang3.tuple.Pair;
-
-import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
 import java.util.List;
 
 /**
@@ -19,11 +14,16 @@ import java.util.List;
 public class Ppt2PicClient extends Ppt2PicHandle implements Ppt2PicOperate {
 
 
+    private static Ppt2PicClient ppt2PicClient = new Ppt2PicClient();
 
 
+    private Ppt2PicClient(){
 
+    }
 
-
+    public static Ppt2PicClient getInstance(){
+        return ppt2PicClient;
+    }
 
     @Override
     public List<ByteArrayOutputStream> gainPicStreamByPptAddress(String pptAddress) throws Exception {

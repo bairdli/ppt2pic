@@ -10,9 +10,10 @@ public class TestPpt2Pic {
 
     public static void main(String[] args){
 
-        Ppt2PicClient ppt2PicClient = new Ppt2PicClient();
+        Ppt2PicClient ppt2PicClient = Ppt2PicClient.getInstance();
         try {
-            ppt2PicClient.writePicToLocalByAddress("/Users/lixiaoxiong/work/学习/并发编程/ppt2picTest.pptx","/Users/lixiaoxiong/ppt2pic/");
+            //ppt2PicClient.writePicToLocalByAddress("/Users/lixiaoxiong/work/学习/并发编程/ppt2picTest.pptx","/Users/lixiaoxiong/ppt2pic/");
+
         } catch (Exception e) {
             e.printStackTrace();
         }

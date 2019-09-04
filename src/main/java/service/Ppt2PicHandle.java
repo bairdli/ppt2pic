@@ -27,7 +27,7 @@ public class Ppt2PicHandle {
 
     private String fontStyle;
 
-    private String picFont;
+    private String picSuffix;
 
     /**
      * 1.将PPT转换成Pic
@@ -173,7 +173,6 @@ public class Ppt2PicHandle {
      */
     public String getExtension(String fileName) {
         if ((fileName == null) || (fileName.lastIndexOf(".") == -1) || (fileName.lastIndexOf(".") == fileName.length() - 1)) {
-            //return null;
             throw new Ppt2PicException(EnumExceptionCode.PPT_ADDRESS_IS_NOT_RIGHT);
         }
         return StringUtils.lowerCase(fileName.substring(fileName.lastIndexOf(".") + 1));
