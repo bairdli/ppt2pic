@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.bairdli</groupId>
+    <artifactId>ppt2pic</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+    <properties>
+
+    <!-- main version setting -->
+    <spring.version>4.1.9.RELEASE</spring.version>
+    <validator.version>5.2.4.Final</validator.version>
+    <mybatis.version>3.3.1</mybatis.version>
+    <mybatis-spring.version>1.2.3</mybatis-spring.version>
+    <druid.version>1.0.28</druid.version>
+    <ehcache.version>2.6.11</ehcache.version>
+    <ehcache-web.version>2.0.4</ehcache-web.version>
+    <shiro.version>1.3.2</shiro.version>
+
+    <!-- tools version setting -->
+    <slf4j.version>1.7.7</slf4j.version>
+    <commons-lang3.version>3.9</commons-lang3.version>
+    <commons-io.version>2.4</commons-io.version>
+    <commons-codec.version>1.9</commons-codec.version>
+    <commons-fileupload.version>1.3.1</commons-fileupload.version>
+    <commons-beanutils.version>1.9.1</commons-beanutils.version>
+    <jackson.version>2.8.1</jackson.version>
+    <xstream.version>1.4.7</xstream.version>
+    <guava.version>25.1-jre</guava.version>
+    <dozer.version>6.4.1</dozer.version>
+    <poi.version>3.16</poi.version>
+    <freemarker.version>2.3.20</freemarker.version>
+    <metrics.version>3.0.2</metrics.version>
+    <metrics-spring.version>3.1.2</metrics-spring.version>
+    <metrics-influxdb.version>0.8.2</metrics-influxdb.version>
+    <fastjson.version>1.2.49</fastjson.version>
+    <zxing.version>3.3.0</zxing.version>
+
+        <poi.version>3.16</poi.version>
+    </properties>
+
+
+
+<dependencies>
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>${commons-lang3.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-text</artifactId>
+        <version>1.6</version>
+    </dependency>
+    <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>${commons-io.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>commons-codec</groupId>
+        <artifactId>commons-codec</artifactId>
+        <version>${commons-codec.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>commons-fileupload</groupId>
+        <artifactId>commons-fileupload</artifactId>
+        <version>${commons-fileupload.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>commons-beanutils</groupId>
+        <artifactId>commons-beanutils</artifactId>
+        <version>${commons-beanutils.version}</version>
+        <exclusions>
+            <exclusion>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+
+
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi</artifactId>
+        <version>${poi.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>${poi.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml-schemas</artifactId>
+        <version>${poi.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-scratchpad</artifactId>
+        <version>${poi.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>ooxml-schemas</artifactId>
+        <version>1.3</version>
+    </dependency>
+
+</dependencies>
+
+
+</project>
