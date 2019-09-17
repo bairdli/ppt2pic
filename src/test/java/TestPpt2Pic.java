@@ -1,5 +1,8 @@
 import service.Ppt2PicClient;
 
+import java.io.ByteArrayOutputStream;
+import java.util.List;
+
 /**
  * @ClassName TestPpt2Pic
  * @Description TODO
@@ -14,6 +17,14 @@ public class TestPpt2Pic {
         try {
             //ppt2PicClient.writePicToLocalByAddress("/Users/lixiaoxiong/work/学习/并发编程/ppt2picTest.pptx","/Users/lixiaoxiong/ppt2pic/");
 
+
+            List<ByteArrayOutputStream> picByteArrayStreamList1 = ppt2PicClient.gainPicStreamByPptAddress("");
+
+            List<ByteArrayOutputStream> picByteArrayStreamList = ppt2PicClient.gainPicStreamByPptUrl("");
+
+            ppt2PicClient.writePicToLocalByAddress("xxx xxx","xxx xxx");
+
+            ppt2PicClient.writePicToLocalByUrl("xxx xxx","xxx xxx");
         } catch (Exception e) {
             e.printStackTrace();
         }
