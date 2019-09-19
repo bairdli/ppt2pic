@@ -1,7 +1,17 @@
 # ppt2pic
 - 基于apache.poi Api开发，用于将PPT转换成图片的工具类。
 
-- 1.0.0版本
+- 1.0.0版本 
+    
+    - 使用
+        ``````
+            <dependency>
+              <groupId>com.github.bairdli</groupId>
+              <artifactId>ppt2pic</artifactId>
+              <version>1.0.0</version>
+            </dependency>
+        ``````
+    
     - 快速入门：
         ``````
         // 1.创建实例

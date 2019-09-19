@@ -9,6 +9,10 @@
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
+    <name>ppt2pic</name>
+    <url>https://github.com/bairdli/ppt2pic</url>
+    <description>PPT转换Pic工具</description>
+
     <!-- 开源签名证书 -->
     <licenses>
         <license>
